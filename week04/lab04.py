@@ -1,6 +1,6 @@
 # Lab 04: Loops and Functions Practice
-# Student Name: [Your Name]
-# Date: [Date]
+# Student Name: Howard Huang
+# Date: February 3, 2026
 
 # ============================================
 # Question 1: Robot Return to Origin
@@ -21,9 +21,8 @@ def robot_returns_to_origin(moves):
             x -= 1
         elif move == "R":
             x += 1
-    return x == 0 and y == 0
     # TODO: Return True if back at origin, False otherwise
-    pass
+    return x == 0 and y == 0
 
 # Test cases for Q1...
 test_moves = ["UD", "LL", "UDLR", "LDRRLRUULR"]
@@ -38,8 +37,8 @@ for moves in test_moves:
 
 def two_sum_brute_force(numbers, target):
     # TODO: Use nested loops to find the pair
+
     # Outer loop: i from 0 to len(numbers)
-    # I think it should be range(len(numbers)-1) since the last number cannot be checked with anything
     for i in range(len(numbers)):
     # Inner loop: j from i+1 to len(numbers)
         for j in range(i + 1, len(numbers)):
@@ -78,6 +77,7 @@ for numbers, target in test_cases:
     print("Numbers: " + str(numbers) + ", Target: " + str(target))
     print("Result: " + str(result))
     print()
+
 # ============================================
 # Question 3: Shuffle the Array
 # ============================================
@@ -89,11 +89,11 @@ def shuffle_array(nums, n):
 
     # Step 2: Create empty result list
     result = []
+    # Step 3: Interleave using a for loop
     for i in range(n):
+
         result.append(first_half[i])
         result.append(second_half[i])
-    # Step 3: Interleave using a for loop
-    # TODO: Loop through range(n) and append alternating elements
 
     return result
 
@@ -116,6 +116,7 @@ for nums, n in test_cases:
     result = shuffle_array(nums, n)
     print("Shuffled: " + str(result))
     print()
+
 # ============================================
 # Question 4: First Unique Character
 # ============================================
@@ -142,8 +143,6 @@ def first_unique_character(s):
     # Return i if char_counts[s[i]] == 1
         if char_counts[s[i]] == 1:
             return i
-    return -1
-
     # Step 3: Return -1 if no unique character found
     return -1
 
