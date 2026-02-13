@@ -1,5 +1,6 @@
 # Week 05 Lab: Recursion & Functions - Starter Code
 # COMP2152 - Python Programming
+# This is a test
 
 print("=" * 60)
 print("WEEK 05 LAB: RECURSION & FUNCTIONS")
@@ -199,7 +200,6 @@ def binary_search_recursive(nums, target, left, right):
     # Hint: return binary_search_recursive(nums, target, mid + 1, right)
     elif target > nums[mid]:
         return binary_search_recursive(nums, target, mid + 1, right)
-
 
 
 # Wrapper function for recursive solution
