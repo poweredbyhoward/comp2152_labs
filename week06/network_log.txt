@@ -1,0 +1,30 @@
+[2026-02-17 11:44:31] PING youtube.com
+PING youtube.com (192.178.192.136): 56 data bytes
+64 bytes from 192.178.192.136: icmp_seq=0 ttl=114 time=3.847 ms
+64 bytes from 192.178.192.136: icmp_seq=1 ttl=114 time=7.716 ms
+64 bytes from 192.178.192.136: icmp_seq=2 ttl=114 time=5.848 ms
+
+--- youtube.com ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 3.847/5.804/7.716/1.580 ms
+----------------------------------------
+[2026-02-17 11:44:55] PING youtube.com
+PING youtube.com (192.178.192.136): 56 data bytes
+64 bytes from 192.178.192.136: icmp_seq=0 ttl=114 time=5.115 ms
+64 bytes from 192.178.192.136: icmp_seq=1 ttl=114 time=4.240 ms
+64 bytes from 192.178.192.136: icmp_seq=2 ttl=114 time=4.122 ms
+
+--- youtube.com ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 4.122/4.492/5.115/0.443 ms
+----------------------------------------
+[2026-02-17 11:45:37] PING 192.178.192.93
+PING 192.178.192.93 (192.178.192.93): 56 data bytes
+64 bytes from 192.178.192.93: icmp_seq=0 ttl=113 time=3.709 ms
+64 bytes from 192.178.192.93: icmp_seq=1 ttl=113 time=4.638 ms
+64 bytes from 192.178.192.93: icmp_seq=2 ttl=113 time=4.052 ms
+
+--- 192.178.192.93 ping statistics ---
+3 packets transmitted, 3 packets received, 0.0% packet loss
+round-trip min/avg/max/stddev = 3.709/4.133/4.638/0.384 ms
+----------------------------------------
