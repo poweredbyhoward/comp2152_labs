@@ -1,6 +1,6 @@
 # ============================================================
 #  WEEK 11 LAB — Q1: PORT SCANNER CLASS
-#  COMP2152 — [Your Name Here]
+#  COMP2152 — Howard Huang
 # ============================================================
 #
 #  You already know how to scan ports from Assignment 2.
@@ -17,13 +17,6 @@ class SimpleScanner:
         self.target = target
         self.open_ports = []
 
-    # TODO: Write scan_port(self, port)
-    #   Create a socket (same as A2)
-    #   Set timeout to 1 second
-    #   Use connect_ex to check if the port is open
-    #   If result == 0: print the port is OPEN, append to self.open_ports, return True
-    #   Otherwise: return False
-    #   Always close the socket (use try/finally)
     def scan_port(self, port):
         try:
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -37,17 +30,12 @@ class SimpleScanner:
         finally:
             sock.close()
 
-    # TODO: Write scan_range(self, start_port, end_port)
-    #   Loop from start_port to end_port (inclusive)
-    #   Call self.scan_port(port) for each one
+
     def scan_range(self, start_port, end_port):
         for port in range(start_port, end_port + 1):
             self.scan_port(port)
 
-    # TODO: Write display_results(self)
-    #   Print "Results for {self.target}:"
-    #   If self.open_ports is empty, print "  No open ports found."
-    #   Otherwise, print each port: "  Port {port}"
+
     def display_results(self):
         print(f"    Result for {self.target}:")
         if not self.open_ports:
